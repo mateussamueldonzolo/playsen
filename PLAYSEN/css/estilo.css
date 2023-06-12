@@ -1,0 +1,391 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #04070e;
+    color: #eeeeee;
+}
+
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background: #111626;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #3E64FF;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container{
+    background: #111626;
+    display: flex;
+}
+
+header{
+    background: #111626;
+}
+
+/*LEFT ASIDE*/
+
+.left{
+    float: left;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 15%;
+    background: #090d1f;
+    height: 100vh;
+}
+
+
+
+.left h2{
+    padding-left: 0.60em;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.left a{
+    display: block;
+    padding-bottom: 1em;
+    color: #bbbbbb;
+    text-decoration: none;
+    display: flex;
+    padding: 0.6em;
+}
+
+.left a:hover{
+    background: #3E64FF;
+    color: #fff;
+    transition: 1s ease-in-out;
+}
+
+
+#i{
+    color: #314FBD;
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+/*A DIREITA*/
+
+.right{
+    float: right;
+    width: 85%;
+    margin-left: 15%;
+    padding: 2rem;
+    background: #1a253a;
+    overflow: hidden;
+}
+
+.logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 1.9rem;
+    margin-left: 0.10rem;
+}
+
+.logo span{
+    margin-top: 10px;
+    margin-left: 0.50rem;
+    position: absolute;
+}
+
+/*MENU*/
+.menu{
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+.textline{
+    word-spacing: 15px;
+}
+.search input{
+    outline: 0;
+    border-radius: 50px;
+    margin-left: 1em;
+    width: 300px;
+    padding: 0.60em;
+    height: 9px;
+    background: transparent;
+    border: 1px solid #bbbbbb;
+    color: #bbbbbb;
+}
+
+.menu a{
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.menu a:nth-child(1){
+    font-weight: 700;
+}
+/*BANNER*/
+
+.banner{
+    height: 500px;
+    background: #242c44;
+    background-image: url(../itens/b\ \(1\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 0.80fr 0.55fr;
+}
+
+.bg-txt{
+    padding: 8rem 2rem 2rem 2rem;
+    font-size: 25px;
+    user-select: text;
+    user-select: none;
+}
+
+.bg-txt button{
+    height: 40px;
+    width: 100px;
+    outline: 0;
+    margin-top: 2em;
+    background: #3E64FF;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+#h{
+    width: 60px;
+    background: 0;
+    user-select: none;
+}
+
+/*BG-MUSIC*/
+
+.bg-music{
+    background: #04040488;
+    backdrop-filter: blur(20px);
+    margin: 4em;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.playlist{
+    display: flex;
+    padding: 0.30em;
+    justify-content: space-between;
+}
+
+.playlist label{
+    color: #898989;
+}
+
+.play{
+    justify-content: center;
+    display: flex;
+}
+
+.play button{
+    margin: 0.20rem;
+  
+    outline: 0;
+    border: 0;
+}
+
+/*GALERIA DE MUSICA*/
+
+.selmusic{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    gap: 30px;
+}
+
+.a{
+    background: #48484800;
+}
+.btxt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.galleria{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.gal{
+    background: #04070e;
+    text-align: center;
+    bottom: 0;
+    height: 240px;
+    overflow: hidden;
+    
+}
+
+.gal:nth-child(1){
+    background: url(../itens/cover\ \(5\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gal:nth-child(2){
+    background: url(../itens/cover\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gal:nth-child(3){
+    background: url(../itens/cover\ \(4\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gal:nth-child(4){
+    background: url(../itens/cover\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.galtext{
+    background: #00000020;
+    backdrop-filter: blur(5px);
+    height: 200px;
+    margin-top: 9rem;
+    padding-top: 1px;
+    line-height: 20px;
+}
+
+/*LISTAS*/
+
+.list{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.60rem;
+    overflow: hidden;
+    background: #14141442;
+}
+
+.imgtext{
+    display: flex;
+}
+
+#img{
+    width: 162px;
+    padding: 1em;
+}
+
+.un{
+    margin-left: 20px;
+    padding-top: 4px;
+    line-height: 10px;
+}
+
+.timerandplay{
+   padding: 1em;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.timerandplay p{
+    line-height: 4px;
+}
+
+/*COVER*/
+
+.ga{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+    margin-top: 3rem;
+    gap: 20px;
+}
+
+.covermusic{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.c, .cm{
+    background: #090d1f;
+}
+
+.ca{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/*TEXT*/
+
+.c{
+    text-align: center;
+    height: 250px;
+   
+}
+
+.ctext{
+    margin-top: 4rem;
+}
+
+.ctext p{
+    font-size: 30px;
+    letter-spacing: 8px;
+}
+
+.ctext button{
+    background: #47b1d229;
+    padding: 0.60rem;
+    outline: 0;
+    border: 2px solid #1F4F5D;
+    width: 130px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cm{
+    height: 222px;
+}
+
+.cm > .ctext{
+    text-align: center;
+}
+
+.cm > .ctext p{
+    font-size: 15px;
+}
+
+/*DIREITA*/
+
+.h{
+    background: #090d1f;
+    height: 500px;
+    margin-top: 4.6rem;
+}
+
+.h > .ctext{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.h > .ctext p{
+    font-size: 55px;
+}
+
+.h > .ctext button{
+    width: 200px;
+}

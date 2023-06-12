@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="awesome/all.min.css">
+    <link rel="icon" type="text/css" href="itens/musi.png">
+    <script src="awesome/all.js"></script>
+    <title>ALLSONGS</title>
+</head>
+<body>
+    <script>    
+        function lid(params) {
+            document.getElementById("left").style.width = "2.30%";
+            document.getElementById("right").style.marginLeft = "2%"
+            document.getElementById("right").style.width = "95%"
+            document.getElementById("left").style.transition = " 1s ease";
+        }
+
+        function lidas(params) {
+            document.getElementById("left").style.width = "15%";
+            document.getElementById("right").style.marginLeft = "15%"
+            document.getElementById("right").style.width = "85%"
+            document.getElementById("right").style.transition = " 1s ease";
+        }*/
+    </script>
+    <div class="container">
+        <div class="left" id="left" onmouseenter="lid()">
+            <div class="logo">
+                <img src="itens/kodi.png" alt="" srcset="">
+                <span>allsongs</span>
+            </div>
+            <div class="recomendado">
+                <h2>Recomendado</h2>
+            <a href=""><i id="i" class="fas fa-circle"></i>Music</a>
+            <a href=""><i id="i" class="fas fa-calendar-minus"></i> Card</a>
+            <a href=""><i id="i" class="fas fa-video"></i> Playlist</a>
+            <a href=""><i id="i" class="fas fa-music"></i> Events</a>
+            <a href=""><i id="i" class="fas fa-radio"></i> Álbuns</a>
+            </div>
+            <div class="recomendado">
+                <h2>Minha Biblioteca</h2>
+            <a href=""><i id="i" class="fas fa-circle"></i> Instagram</a>
+            <a href=""><i id="i" class="fas fa-id-card-alt"></i> Card</a>
+            <a href=""><i id="i" class="fas fa-link"></i> Instagram</a>
+            <a href=""><i id="i" class="fas fa-save"></i> Instagram</a>
+            </div>      
+        </div>
+        <!--A DIREITA-->
+        <div class="right" id="right" onclick="lidas()">
+            <div class="menu">
+                <div class="prev" style="cursor: pointer;">
+                    <img src="itens/forward.png" alt="" srcset="">
+                    <img src="itens/back.png" alt="" srcset="">
+                </div>
+                <div class="search">
+                    <i class="fas fa-microphone"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="textline">
+                    <a href="">Tranding</a>
+                    <a href="">Topchart</a>
+                    <a href="">News</a>
+                    <a href="">Upcamirg</a>
+                </div>
+                <div class="perfil">
+                    <img src="itens/not.png" width="25px">
+                    <img src="itens/u3.png" width="25px">
+                </div>
+                
+            </div>
+            <div class="banner">
+                <div class="bg-txt">
+                    <span>NOW PLAYING</span>
+                    <h2>THE MAN IN EVERY WHERE</h2>
+                    <p style="font-size: 15px;">TOTAL TRACK: 12</p>
+                    <button type="submit">PLAY ALL</button>
+                    <button id="h" type="submit"><img src="itens/heart.png" alt="" srcset=""></button>
+                    <button id="h"type="submit"><img src="itens/share.png" alt="" srcset=""></button>
+                </div>
+                <div class="bg-music">
+                    <h4>UP NEXT</h4>
+                    <div class="playlist">
+                        <div class="ptxt">
+                            <span>Drake</span><br>
+                            <label>Gone</label>
+                        </div>
+                        <div class="play">
+                           <img src="itens/play.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <div class="ptxt">
+                            <span>Talismã</span><br>
+                            <label>Emana Cheezy</label>
+                        </div>
+                        <div class="play">
+                           <img src="itens/play.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <div class="ptxt">
+                            <span>Drake</span><br>
+                            <label>Gone</label>
+                        </div>
+                        <div class="play">
+                           <img src="itens/play.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="play">
+                        <button type=""></button>
+                        <button type="">0</button>
+                        <button type=""><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="selmusic">
+                <div class="a">
+                    <div class="btxt">
+                        <div class="nr" style="display:flex;">
+                            <h2>New Releses</h2>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <h2 style="font-size: 13px;line-height: 55px; font-weight: 300;">With 2023</h2>
+                        </div>
+                        
+                        <div class="prev">
+                            <h2 style="font-weight: 100; font-size: 15px;line-height: 4em;">See all</h2> 
+                        </div>
+                    </div>
+                <div class="listadd">
+                    <div class="list">
+                        <div class="imgtext">
+                        <div class="img">
+                            <img id="img" src="itens/cover (4).jpg" width="40">
+                        </div>
+                        <div class="un">
+                            <h4>Back of My Mind</h3>
+                            <p>H.E.R.</p>
+                            <span>R&B/Soul - 2021</span>
+                        </div>
+                        </div>
+                        <div class="timerandplay">
+                            <p>4:20</p>
+                            <img src="itens/play.png" width="40">
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="imgtext">
+                        <div class="img">
+                            <img src="itens/cover (5).jpg" width="90">
+                        </div>
+                        <div class="un">
+                            <h4>Sincera</h3>
+                            <span>Peróla</span>
+                        </div>
+                        </div>
+                        <div class="timerandplay">
+                            <p>4:20</p>
+                            <img src="itens/play.png" width="40">
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="imgtext">
+                        <div class="img">
+                            <img src="itens/cover (1).jpg" width="90">
+                        </div>
+                        <div class="un">
+                            <h4>MIND</h3>
+                            <span>Fontes</span>
+                        </div>
+                        </div>
+                        <div class="timerandplay">
+                            <p>4:20</p>
+                            <img src="itens/play.png" width="40">
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="imgtext">
+                        <div class="img">
+                            <img src="itens/cover (2).jpg" width="90">
+                        </div>
+                        <div class="un">
+                            <h4>Drake</h3>
+                            <span>Fontes</span>
+                        </div>
+                        </div>
+                        <div class="timerandplay">
+                            <p>4:20</p>
+                            <img src="itens/play.png" width="40">
+                        </div>
+                    </div>
+                </div>
+                 </div>
+                <div class="b">
+                    <div class="btxt">
+                        <h2>Top Artist</h2>
+                        <div class="prev">
+                            <img src="itens/leftarrow.png" alt="" srcset="">
+                            <img src="itens/rightarrow.png" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="galleria">
+                        <div class="gal">
+                            <div class="galtext">
+                                <h2>Pérola</h2>
+                                <span>Momentos</span>
+                            </div>
+                        </div>
+                        <div class="gal">
+                            <div class="galtext">
+                                <h2>Beyoncé & Jay-Z</h2>
+                                <span>Momentos</span>
+                            </div>
+                        </div>
+                        <div class="gal">
+                            <div class="galtext">
+                                <h2>H.E.R</h2>
+                                <span>Momentos</span>
+                            </div>
+                        </div>
+                        <div class="gal">
+                            <div class="galtext">
+                                <h2>Nga</h2>
+                                <span>Momentos</span>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+            </div>
+            <!--COVER MUSIC-->
+            <div class="ga">
+                <div class="g">
+                    <div class="nr" style="display:flex;">
+                        <h2>New Releses</h2>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h2 style="font-size: 13px;line-height: 55px; font-weight: 300;">With 2023</h2>
+                    </div>
+                    <div class="covermusic">
+                        <div class="c">
+                            <div class="ctext">
+                                <p>NICE DREAM</p>
+                                <button type="submit">CLICK HERE</button>
+                            </div>
+                        </div>
+                        <div class="ca">
+                            <div class="cm">
+                                <div class="ctext">
+                                    <p>LET NIGHT</p>
+                                    <button type="submit">CLICK HERE</button>
+                                </div>
+                            </div>
+                            <div class="cm">
+                                <div class="ctext">
+                                    <p>WORNG WAY</p>
+                                    <button type="submit">CLICK HERE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h">
+                    <div class="ctext">
+                        <p>NIGHTMARE</p>
+                        <button type="submit">CLICK HERE</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        
+
+
+    
+</body>
+</html>
